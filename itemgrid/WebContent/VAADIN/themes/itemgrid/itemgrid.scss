@@ -1,0 +1,28 @@
+/* Import the reindeer theme.*/
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+@import "../reindeer/reindeer.scss";
+
+/* This contains all of your theme.*/
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin itemgrid {
+  /* Include all the styles from the reindeer theme */
+  @include reindeer;
+
+  .m-itemgrid td {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  /* Insert your theme rules here */
+  .m-itemgrid-item {
+    border: 2px solid gray;
+    background-color: #efefef;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .m-itemgrid-selected {
+    border: 2px solid blue;
+    background-color: white;
+  }
+}
