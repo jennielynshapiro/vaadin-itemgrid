@@ -4,7 +4,7 @@ package org.vaadin.miki.itemgrid.client.itemgrid;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.vaadin.shared.AbstractFieldState;
+import com.vaadin.shared.ui.select.AbstractSelectState;
 
 /**
  * State of an item grid.
@@ -12,7 +12,7 @@ import com.vaadin.shared.AbstractFieldState;
  * @author miki
  * 
  */
-public class ItemGridState extends AbstractFieldState {
+public class ItemGridState extends AbstractSelectState {
 
   private static final long serialVersionUID = 20130203L;
 
